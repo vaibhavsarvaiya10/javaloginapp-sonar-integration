@@ -65,11 +65,25 @@
 	</dependencies>
 
 	<build>
+		<pluginManagement>
+      			<plugins>
+        			<plugin>
+          				<groupId>org.apache.maven.plugins</groupId>
+          				<artifactId>maven-compiler-plugin</artifactId>
+          				<version>3.10.1</version>
+        			</plugin>
+      			</plugins>
+    		</pluginManagement>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
+			<plugin>
+        			<groupId>org.apache.maven.plugins</groupId>
+        			<artifactId>maven-compiler-plugin</artifactId>
+        			<version>3.10.1</version>
+      			</plugin>
 		</plugins>
 	</build>
 
